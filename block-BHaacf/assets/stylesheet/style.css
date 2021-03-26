@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #232D38;
+}
+
+a {
+    text-decoration: none;
+}
+.upper {
+    text-transform: uppercase;
+}
+.transform {
+    text-transform: capitalize;
+}
+.orange {
+    color: #ED563A;
+}
+.btn {
+    background-color: #ED563A;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn:hover {
+    opacity: .7;
+}
+.btn-primary {
+    padding: 12px;
+}
+.btn-secondary {
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 4px;
+}
+.m30bot {
+    margin-bottom: 30px;
+}
+.m30top {
+    margin-top: 30px;
+}
+.m20bot {
+    margin-bottom: 20px;
+}
+.m20top {
+    margin-top: 20px;
+}
+.m10bot {
+    margin-bottom: 10px;
+}
+.m10top {
+    margin-top: 10px;
+}
+.align {
+    text-align: center;
+}
+.p50top {
+    padding-top: 50px
+}
+.p50bot {
+    padding-bottom: 50px;
+}
+.p30top {
+    padding-top: 30px;
+}
+.p30bot {
+    padding-bottom: 30px;
+}
+.p20top {
+    padding-top: 20px;
+}
+.p20bot {
+    padding-bottom: 20px;
+}
+.p80top {
+    padding-top: 80px;
+}
+.p80bot {
+    padding-bottom: 80px;
+}
+.p100top {
+    padding-top: 100px;
+}
+.p100bot {
+    padding-bottom: 100px;
+}
+.h2-style {
+    color: #232D38;
+    font-size: 25px;
+    font-weight: 700;
+}
+.img-style {
+    width: 100%;
+    object-fit: cover;
+}
+.mright {
+    margin-right: 15px;
+}
+
+/* Container */
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modify {
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-45 {
+    flex: 0 1 47.2%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-70 {
+    flex: 0 1 70%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-65 {
+    flex: 0 1 65%;
+}
+.flex-75 {
+    flex: 0 1 75%;
+}
+.flex-32 {
+    flex: 0 1 35%;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+p {
+    font-size: 14px;
+}
+.evenly {
+    justify-content: space-evenly;
+}
+.new-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Header */
+
+.header {
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(80,89,99, .5));
+    z-index: 5;
+}
+
+.brand .logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.nav {
+    width: 55%;
+}
+
+.sub-menu a {
+    font-weight: 600;
+    color: #fff;
+}
+
+.sub-menu a:hover {
+    color: #ED563A;
+}
+
+.sub-menu .btn:hover {
+    opacity: .7;
+    color: #fff;
+}
+
+/* Hero */
+
+.welcome-section {
+    /* background-color: red;  */
+    position: relative;
+    bottom: 450px;
+    z-index: 4;
+}
+video {
+    width: 100%;
+}
+.background {
+    width: 100%;
+    height: 107vh;
+    background: linear-gradient(rgba(42,51,60, .5), rgba(42,51,60,.5));
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.welcome {
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+}
+.welcome h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.heading {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+/* Program-features */
+
+.program-features {
+    position: relative;
+    bottom: 170px;
+}
+.about-program {
+    width: 700px;
+}
+
+.box img {
+    height: 122px;
+    border-radius: 6px;
+}
+.box h3 {
+    font-size: 18px;
+    color: #232D38;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.box p {
+    font-size: 14px;
+}
+.box a {
+    color: #ED563A;
+    font-size: 14px;
+    font-weight: 500;
+}
+.box a:hover  {
+    text-decoration: underline;
+}
+/* Member */
+
+.member-section {
+    background: url(/assets/cta-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 45vh;
+    color: #fff;
+    position: relative;
+    bottom: 80px;
+}
+
+.member {
+    width: 700px;
+}
+
+.member h2 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Class */ 
+
+.class-section {
+    position: relative;
+    bottom: 30px;
+}
+.about-class {
+    width: 700px;
+}
+
+.class-part {
+    padding-top: 80px;
+}
+
+.diffrent-classes {
+    align-self: stretch;
+    padding-bottom: 20px;
+}
+
+.column {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.class-img {
+    position: relative;
+    left: 13px;
+}
+
+.diffrent-classes .btn {
+    display: block;
+}
+
+.column h3 {
+    color: #232D38;
+    font-weight: 600;
+}
+
+.column h3:hover {
+    color: #ED563A;
+}
+
+.second-section {
+    align-self: flex-start;
+}
+
+.second-section h3 {
+    font-size: 18px;
+    color: #232D38;
+    font-weight: 700;
+}
+
+/* Schedule */
+
+.schedule-section {
+    height: 130vh;
+    background: url(/assets/schedule-bg.jpg) center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 80px;
+}
+.about-schedule h2 {
+    color: #fff;
+}
+.schedule-section .orange {
+    color: #ED563A;
+}
+.schedule-section a {
+    color: #fff;
+}
+.schedule-section a:hover {
+    color: #ED563A;
+}
+.table {
+    border: 1px solid #667381;
+    font-size: 12px;
+    text-align: center;
+}
+
+td{
+    border: 1px solid #667381;
+    padding: 30px;
+}
+
+.table tr:first-child td {
+    border-top: 1px solid white;
+}
+.table tr:nth-child(even) td {
+    border-bottom: 1px solid white;
+}
+
+/* Trainer Details */
+
+.trainer-details {
+    /* background-color: red; */
+    padding-top: 80px;
+} 
+
+.trainer .pink {
+    color: crimson;
+}
+
+.trainer {
+    box-shadow: 2px 2px 10px gray;
+     border-radius: 6px;
+    padding: 20px;
+}
+.trainer h3 {
+    font-size: 18px;
+    color: #232D38;
+    font-weight: 600;
+}
+
+.social a {
+    margin-right: 10px;
+    color: #232D38;
+}
+
+.social a:hover {
+    color: crimson;
+}
+/* Contact */
+
+.contact-details {
+    background: url(/assets/contact-bg.jpg) center center no-repeat;
+    background-size: cover;
+    align-self: stretch;
+}
+.form {
+    width: 80%;
+    background-color: #fff;
+    padding: 30px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border:  1px solid rgb(197, 195, 195);
+    outline: 0;
+}
+
+.form-control:focus {
+    border: 1px solid blue;
+}
+
+.form .btn {
+    border: 0;
+    outline: 0;
+}
+
+/* Footer */
+
+small {
+    font-size: 12px;
+}
+small .pink {
+    color: crimson;
+} 
